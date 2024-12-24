@@ -135,7 +135,12 @@
                   <h2>Contact</h2>
                   </header>
                   <p>Please feel free to get in touch with the form below or by emailing me at <a style = "text-decoration: none"href="mailto:sosa45nh@gmail.com">sosa45nh@gmail.com</a></p>
-                  <form method="POST" action="#">
+
+                  <form method="post" name="submitmessage" netlify-honeypot="bot-field" action="submission-confirmation.html#contact" netlify>
+                    <p style="display:none;">
+                    <label>nothing<input name="bot-field"></label>
+                    </p>
+
                     <div class="row gtr-uniform">
                       <div class="col-6 col-12-xsmall">
                         <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
